@@ -237,3 +237,20 @@ function openDesktopModal(e) {
 seeProjectDesktop.forEach((element) => {
   element.addEventListener('click', openDesktopModal);
 });
+
+//Form Validation
+const submitBtn = document.querySelector('.submitBtn');
+const emailInput = document.querySelector('.emailInput');
+const contactForm = document.querySelector('.contactForm');
+
+submitBtn.addEventListener('click', validation);
+
+function validation(e) {
+  let str = event.target.value;
+  let regEx = /[a-z0-9]/g;
+  if(regEx.test(str) === true) {
+    console.log('true');
+  } else {
+    submitBtn.setCustomValidity('Sorry, this form has not been submitted. \n The content of the email field has to be in lower case. \n Please check your inputs and resubmit again.');
+  }
+}
