@@ -1,12 +1,26 @@
+import './style.scss';
+import close from './assets/close-mobileModal.svg';
+import live from './assets/icon-live.png';
+import source from './assets/icon-source.png';
+
+import mockAwc from './assets/img/awc2022/all-devices-black.png';
+import awc from './assets/img/awc2022/app_screenshot.png';
+import mockAwb from './assets/img/awesome_books/all-devices-black.png';
+import awb from './assets/img/awesome_books/app_screenshot.png';
+import mockTdl from './assets/img/to-do-list/all-devices-black.png';
+import tdl from './assets/img/to-do-list/app_screenshot.png';
+import mockLdb from './assets/img/leaderboard/all-devices-black.png';
+import ldb from './assets/img/leaderboard/app_screenshot.png';
+
 const gridContainer = document.querySelector('.gridContainer');
 
 const cardObj = {
-  h3: ['Asia Web Conference 2022', 'Multi-Post Stories Gain+Glory', 'Multi-Post Stories Gain+Glory', 'Multi-Post Stories Gain+Glory', 'Multi-Post Stories Gain+Glory', 'Multi-Post Stories Gain+Glory'],
-  img: ['./assets/img/homepageDesktop_screenshot.png', './assets/desktop-details01.png', './assets/desktop-details02.png', './assets/desktop-details03.png', './assets/desktop-details04.png', './assets/desktop-details05.png'],
-  li1: ['HTML', 'Ruby on rails', 'Ruby on rails', 'Ruby on rails', 'Ruby on rails', 'Ruby on rails'],
-  li2: ['Sass', 'CSS', 'CSS', 'CSS', 'CSS', 'CSS'],
+  h3: ['AWC 2022', 'Awesome Books', 'To-Do List', 'Leaderboard', 'Multi-Post Stories Gain+Glory', 'Multi-Post Stories Gain+Glory'],
+  img: [awc, awb, tdl, ldb, './assets/desktop-details04.png', './assets/desktop-details05.png'],
+  li1: ['HTML', 'HTML', 'HTML', 'HTML', 'Ruby on rails', 'Ruby on rails'],
+  li2: ['Sass', 'Sass', 'Sass', 'Sass', 'CSS', 'CSS'],
   li3: ['JavaScript', 'JavaScript', 'JavaScript', 'JavaScript', 'JavaScript', 'JavaScript'],
-  li4: ['Linters', 'HTML', 'HTML', 'HTML', 'HTML', 'HTML'],
+  li4: ['Linters', 'Linters', 'Linters', 'API', 'HTML', 'HTML'],
 };
 // Create Card Items Dynamically
 const gridItem = [];
@@ -24,7 +38,8 @@ for (let i = 0; i < 6; i += 1) {
   gridItem[i] = document.createElement('div');
   gridItem[i].classList.add('gridItem');
   gridItem[i].style.backgroundImage = `url(${cardObj.img[i]})`;
-  gridItem[i].style.backgroundSize = 'cover';
+  gridItem[i].style.backgroundSize = 'contain';
+  gridItem[i].style.backgroundRepeat = 'no-repeat';
 
   descriptionContainer[i] = document.createElement('div');
   descriptionContainer[i].classList.add('descriptionContainer');
@@ -107,70 +122,73 @@ for (let i = 0; i < gridItem.length; i += 1) {
 }
 
 const description0 = 'Microverse First Capstone Project: This is an educational project to make a website for a web conference event with home page and about page.';
+const description1 = 'This is an educational project to make a simple website that displays a list of books and allows you to add and remove books from that list. The goal is to make it more organized by using modules and practice the ES6 syntax.';
+const description2 = 'This is an educational project to make a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.';
+const description3 = 'This is an educational project to create a website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API Service.';
 const description5 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 
 const projectObj = {
   image: [
-    './assets/img/homepageDesktop_screenshot.png',
-    './assets/projectImage01.png',
-    './assets/projectImage02.png',
-    './assets/projectImage03.png',
+    mockAwc,
+    mockAwb,
+    mockTdl,
+    mockLdb,
     './assets/projectImage04.png',
     './assets/projectImage05.png',
   ],
   imageDesktop: [
-    './assets/img/homepageDesktop_screenshot.png',
-    './assets/desktop-details01.png',
-    './assets/desktop-details02.png',
-    './assets/desktop-details03.png',
+    mockAwc,
+    mockAwb,
+    mockTdl,
+    mockLdb,
     './assets/desktop-details04.png',
     './assets/desktop-details05.png',
   ],
   name: [
     'Asia Web Conference 2022',
-    'Keeping track of hundreds of components',
-    'Keeping track of hundreds of components',
-    'Keeping track of hundreds of components',
+    'Awesome Books',
+    'To-Do List',
+    'Leaderboard App',
     'Keeping track of hundreds of components',
     'Keeping track of hundreds of components',
   ],
   lang: [
     ['HTML', 'Sass', 'JavaScript'],
-    ['Ruby on rails', 'css', 'JavScript'],
-    ['Ruby on rails', 'css', 'JavScript'],
-    ['Ruby on rails', 'css', 'JavScript'],
+    ['HTML', 'Sass', 'JavaScript'],
+    ['HTML', 'Sass', 'JavaScript'],
+    ['HTML', 'Sass', 'JavaScript'],
     ['Ruby on rails', 'css', 'JavScript'],
     ['Ruby on rails', 'css', 'JavScript'],
   ],
   langDesktop: [
     ['GitHub', 'VS Code', 'HTML', 'Sass', 'JavaScript', 'Linters'],
-    ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    ['GitHub', 'VS Code', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    ['GitHub', 'VS Code', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    ['GitHub', 'VS Code', 'HTML', 'Sass', 'JavaScript', 'Linters'],
     ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   ],
   description: [
     description0,
-    description5,
-    description5,
-    description5,
+    description1,
+    description2,
+    description3,
     description5,
     description5,
   ],
   liveLink: [
     'https://mavericks-db.github.io/capstone01/',
-    'https://github.com/mavericks-db',
-    'https://github.com/mavericks-db',
-    'https://github.com/mavericks-db',
+    'https://mavericks-db.github.io/awesome-books-ES6/',
+    'https://mavericks-db.github.io/todo-list/dist/index.html',
+    'https://mavericks-db.github.io/leaderboard/dist/index.html',
     'https://github.com/mavericks-db',
     'https://github.com/mavericks-db',
   ],
   sourceLink: [
     'https://github.com/mavericks-db/capstone01',
-    'https://github.com/mavericks-db',
-    'https://github.com/mavericks-db',
-    'https://github.com/mavericks-db',
+    'https://github.com/mavericks-db/awesome-books-ES6',
+    'https://github.com/mavericks-db/todo-list',
+    'https://github.com/mavericks-db/leaderboard',
     'https://github.com/mavericks-db',
     'https://github.com/mavericks-db',
   ],
@@ -184,7 +202,7 @@ function openMobileModal(e) {
 
   const img1 = document.createElement('img');
   img1.classList.add('closeMobile');
-  img1.setAttribute('src', './assets/close-mobileModal.svg');
+  img1.setAttribute('src', close);
   function closeMobileModal() {
     mobileModal[i].style.display = 'none';
     div1.remove();
@@ -222,7 +240,7 @@ function openMobileModal(e) {
   a1.appendChild(linka1);
   a1.href = projectObj.liveLink[i];
   const imga1 = document.createElement('img');
-  imga1.setAttribute('src', './assets/icon-live.png');
+  imga1.setAttribute('src', live);
   a1.appendChild(imga1);
 
   const a2 = document.createElement('a');
@@ -231,7 +249,7 @@ function openMobileModal(e) {
   a2.appendChild(linka2);
   a2.href = projectObj.sourceLink[i];
   const imga2 = document.createElement('img');
-  imga2.setAttribute('src', './assets/icon-source.png');
+  imga2.setAttribute('src', source);
   a2.appendChild(imga2);
 
   div1.appendChild(img1);
@@ -262,7 +280,7 @@ function openDesktopModal(e) {
 
   const img1 = document.createElement('img');
   img1.classList.add('closeDesktop');
-  img1.setAttribute('src', './assets/close-mobileModal.svg');
+  img1.setAttribute('src', close);
 
   function closeMobileModal() {
     desktopModal.style.display = 'none';
@@ -318,7 +336,7 @@ function openDesktopModal(e) {
   a1.href = projectObj.liveLink[i];
 
   const imga1 = document.createElement('img');
-  imga1.setAttribute('src', './assets/icon-live.png');
+  imga1.setAttribute('src', live);
   a1.appendChild(imga1);
 
   const a2 = document.createElement('a');
@@ -329,7 +347,7 @@ function openDesktopModal(e) {
   a2.href = projectObj.sourceLink[i];
 
   const imga2 = document.createElement('img');
-  imga2.setAttribute('src', './assets/icon-source.png');
+  imga2.setAttribute('src', source);
   a2.appendChild(imga2);
   div1.appendChild(img1);
   div1.appendChild(img2);
