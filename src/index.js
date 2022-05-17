@@ -10,6 +10,10 @@ import mockTdl from './assets/img/to-do-list/mock_tdl.png';
 import tdl from './assets/img/to-do-list/app_screenshot_tdl.png';
 import mockLdb from './assets/img/leaderboard/mock_ldb.png';
 import ldb from './assets/img/leaderboard/app_screenshot_ldb.png';
+import mockApi from './assets/img/primeshows/mock_api.png';
+import api from './assets/img/primeshows/app_screenshot_api.png';
+import sample from './assets/desktop-details05.png';
+import sample2 from './assets/projectImage05.png';
 
 const gridContainer = document.querySelector('.gridContainer');
 
@@ -57,35 +61,35 @@ const cardObj = [
   {
     h3: 'Leaderboard',
     img: ldb,
-    li: ['Webpack', 'API', 'Sass', 'JavaScript'],
+    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
     imgM: mockLdb,
     imgD: mockLdb,
     name: 'Leaderboard App',
-    lang: ['Webpack', 'Sass', 'JavaScript'],
-    langDesktop: ['GitHub', 'Webpack', 'API', 'Sass', 'JavaScript', 'Linters'],
+    lang: ['API', 'Webpack', 'JavaScript'],
+    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
     liveLink: 'https://mavericks-db.github.io/leaderboard/dist/index.html',
     sourceLink: 'https://github.com/mavericks-db/leaderboard',
     description: 'This is an educational project to create a website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API Service.',
   },
   {
-    h3: 'Multi-Post Stories Gain+Glory',
-    img: './assets/desktop-details04.png',
-    li: ['HTML', 'Sass', 'JavaScript', 'Linters'],
-    imgM: './assets/projectImage04.png',
-    imgD: './assets/desktop-details04.png',
-    name: 'Keeping track of hundreds of components',
-    lang: ['Ruby on rails', 'css', 'JavScript'],
-    langDesktop: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    liveLink: 'https://github.com/mavericks-db',
-    sourceLink: 'https://github.com/mavericks-db',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    h3: 'Prime Shows HD',
+    img: api,
+    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    imgM: mockApi,
+    imgD: mockApi,
+    name: 'Prime Shows HD',
+    lang: ['API', 'Webpack', 'JavaScript'],
+    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    liveLink: 'https://mavericks-db.github.io/capstone02/dist/',
+    sourceLink: 'https://github.com/mavericks-db/capstone02',
+    description: 'Microverse Second Capstone Project: This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 or 3 user interfaces (depending on the size of our team). Built with API, Webpack, HTML, Sass and JavaScript.',
   },
   {
     h3: 'Multi-Post Stories Gain+Glory',
-    img: './assets/desktop-details05.png',
+    img: sample,
     li: ['HTML', 'Sass', 'JavaScript', 'Linters'],
-    imgM: './assets/projectImage05.png',
-    imgD: './assets/desktop-details05.png',
+    imgM: sample2,
+    imgD: sample,
     name: 'Keeping track of hundreds of components',
     lang: ['Ruby on rails', 'css', 'JavScript'],
     langDesktop: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],

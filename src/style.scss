@@ -340,6 +340,7 @@ body {
   left: 0;
   z-index: 1;
   overflow: auto;
+  padding-top: 2rem;
 }
 
 .mobileMCContainer {
@@ -457,8 +458,9 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   overflow: auto;
+  padding-top: 2rem;
 }
 
 .desktopMCContainer {
@@ -470,6 +472,7 @@ body {
   padding: 2rem;
   width: 60%;
   height: max-content;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
 
   .closeDesktop {
     align-self: flex-end;
@@ -482,7 +485,7 @@ body {
     display: block;
     padding-bottom: 0;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
   }
 
   .projectNameDesktop {
@@ -514,6 +517,7 @@ body {
     justify-content: flex-start;
     text-align: left;
     flex-wrap: wrap;
+    margin-top: 1rem;
 
     li {
       background-color: #ebf0ee;
