@@ -3,14 +3,14 @@ import close from './assets/close-mobileModal.svg';
 import live from './assets/icon-live.png';
 import source from './assets/icon-source.png';
 
-import mockAwc from './assets/img/awc2022/all-devices-black.png';
-import awc from './assets/img/awc2022/app_screenshot.png';
-import mockAwb from './assets/img/awesome_books/all-devices-black.png';
-import awb from './assets/img/awesome_books/app_screenshot.png';
-import mockTdl from './assets/img/to-do-list/all-devices-black.png';
-import tdl from './assets/img/to-do-list/app_screenshot.png';
-import mockLdb from './assets/img/leaderboard/all-devices-black.png';
-import ldb from './assets/img/leaderboard/app_screenshot.png';
+import mockAwc from './assets/img/awc2022/mock_awc.png';
+import awc from './assets/img/awc2022/app_screenshot_awc.png';
+import mockAwb from './assets/img/awesome_books/mock_awb.png';
+import awb from './assets/img/awesome_books/app_screenshot_awb.png';
+import mockTdl from './assets/img/to-do-list/mock_tdl.png';
+import tdl from './assets/img/to-do-list/app_screenshot_tdl.png';
+import mockLdb from './assets/img/leaderboard/mock_ldb.png';
+import ldb from './assets/img/leaderboard/app_screenshot_ldb.png';
 
 const gridContainer = document.querySelector('.gridContainer');
 
