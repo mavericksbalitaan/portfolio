@@ -62,9 +62,9 @@ const mock_ldb_namespaceObject = __webpack_require__.p + "5db2153d0e4a3f9d38bc.p
 ;// CONCATENATED MODULE: ./src/assets/img/leaderboard/app_screenshot_ldb.png
 const app_screenshot_ldb_namespaceObject = __webpack_require__.p + "a2a714a38adca883643d.png";
 ;// CONCATENATED MODULE: ./src/assets/img/primeshows/mock_api.png
-const mock_api_namespaceObject = __webpack_require__.p + "47d8c1453728e99c9c7a.png";
+const mock_api_namespaceObject = __webpack_require__.p + "50473038b36844ef9139.png";
 ;// CONCATENATED MODULE: ./src/assets/img/primeshows/app_screenshot_api.png
-const app_screenshot_api_namespaceObject = __webpack_require__.p + "2d5195e8547ceb1c1dd9.png";
+const app_screenshot_api_namespaceObject = __webpack_require__.p + "419857c1b747903647df.png";
 ;// CONCATENATED MODULE: ./src/assets/desktop-details05.png
 const desktop_details05_namespaceObject = __webpack_require__.p + "834d2a6ec7124bae50a3.png";
 ;// CONCATENATED MODULE: ./src/assets/projectImage05.png
