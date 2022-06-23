@@ -3,17 +3,13 @@ import close from './assets/close-mobileModal.svg';
 import live from './assets/icon-live.png';
 import source from './assets/icon-source.png';
 import mockAwc from './assets/img/awc2022/mock_awc.png';
-import awc from './assets/img/awc2022/app_screenshot_awc.png';
-import mockAwb from './assets/img/awesome_books/mock_awb.png';
-import awb from './assets/img/awesome_books/app_screenshot_awb.png';
 import mockTdl from './assets/img/to-do-list/mock_tdl.png';
-import tdl from './assets/img/to-do-list/app_screenshot_tdl.png';
 import mockLdb from './assets/img/leaderboard/mock_ldb.png';
-import ldb from './assets/img/leaderboard/app_screenshot_ldb.png';
 import mockApi from './assets/img/primeshows/mock_api.png';
-import api from './assets/img/primeshows/app_screenshot_api.png';
-import sample from './assets/desktop-details05.png';
-import sample2 from './assets/projectImage05.png';
+import mockMath from './assets/img/math-magicians/mock_math.png';
+import mockBook from './assets/img/bookstore/mock_bookstore.png';
+import mockSpace from './assets/img/space-travelers-hub/mock_space.png';
+import mockPokemon from './assets/img/pokemon/mock_pokemon.png';
 
 const gridContainer = document.querySelector('.gridContainer');
 
@@ -21,7 +17,7 @@ const gridContainer = document.querySelector('.gridContainer');
 const cardObj = [
   {
     h3: 'AWC 2022',
-    img: awc,
+    img: mockAwc,
     li: ['HTML', 'Sass', 'JavaScript', 'Linters'],
     imgM: mockAwc,
     imgD: mockAwc,
@@ -33,21 +29,8 @@ const cardObj = [
     description: 'Microverse First Capstone Project: This is an educational project to make a website for a web conference event with home page and about page.',
   },
   {
-    h3: 'Awesome Books',
-    img: awb,
-    li: ['HTML', 'Sass', 'JavaScript', 'Linters'],
-    imgM: mockAwb,
-    imgD: mockAwb,
-    name: 'Awesome Books App',
-    lang: ['HTML', 'Sass', 'JavaScript'],
-    langDesktop: ['GitHub', 'VS Code', 'HTML', 'Sass', 'JavaScript', 'Linters'],
-    liveLink: 'https://mavericks-db.github.io/awesome-books-ES6/',
-    sourceLink: 'https://github.com/mavericks-db/awesome-books-ES6',
-    description: 'This is an educational project to make a simple website that displays a list of books and allows you to add and remove books from that list. The goal is to make it more organized by using modules and practice the ES6 syntax.',
-  },
-  {
     h3: 'To-Do List',
-    img: tdl,
+    img: mockTdl,
     li: ['Webpack', 'Sass', 'JavaScript', 'Linters'],
     imgM: mockTdl,
     imgD: mockTdl,
@@ -60,7 +43,7 @@ const cardObj = [
   },
   {
     h3: 'Leaderboard',
-    img: ldb,
+    img: mockLdb,
     li: ['API', 'Webpack', 'Sass', 'JavaScript'],
     imgM: mockLdb,
     imgD: mockLdb,
@@ -73,7 +56,7 @@ const cardObj = [
   },
   {
     h3: 'Prime Shows HD',
-    img: api,
+    img: mockApi,
     li: ['API', 'Webpack', 'Sass', 'JavaScript'],
     imgM: mockApi,
     imgD: mockApi,
@@ -85,17 +68,56 @@ const cardObj = [
     description: 'Microverse Second Capstone Project: This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 or 3 user interfaces (depending on the size of our team). Built with API, Webpack, HTML, Sass and JavaScript.',
   },
   {
-    h3: 'Multi-Post Stories Gain+Glory',
-    img: sample,
-    li: ['HTML', 'Sass', 'JavaScript', 'Linters'],
-    imgM: sample2,
-    imgD: sample,
-    name: 'Keeping track of hundreds of components',
-    lang: ['Ruby on rails', 'css', 'JavScript'],
-    langDesktop: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    liveLink: 'https://github.com/mavericks-db',
-    sourceLink: 'https://github.com/mavericks-db',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    h3: 'Math Magicians',
+    img: mockMath,
+    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    imgM: mockMath,
+    imgD: mockMath,
+    name: 'Math Magicians',
+    lang: ['API', 'Webpack', 'JavaScript'],
+    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    liveLink: 'https://app-math-magicians.netlify.app/',
+    sourceLink: 'https://github.com/mavericks-db/math-magicians',
+    description: 'Microverse Module 03 Project: "Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make a simple calculations and read a random math-related quote. Built with React, Sass and JavaScript.',
+  },
+  {
+    h3: 'Bookstore CMS',
+    img: mockBook,
+    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    imgM: mockBook,
+    imgD: mockBook,
+    name: 'Bookstore CMS',
+    lang: ['API', 'Webpack', 'JavaScript'],
+    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    liveLink: 'https://app-bookstore-cms.netlify.app/',
+    sourceLink: 'https://github.com/mavericks-db/bookstore',
+    description: 'Microverse Module 03 Project: This educational project is similar to the "Awesome Books" website. It is a MVP version of it that allows you to display a list of books, add a book and remove a selected book. Built with React, Sass and JavaScript.',
+  },
+  {
+    h3: 'Space Travelers- Hub',
+    img: mockSpace,
+    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    imgM: mockSpace,
+    imgD: mockSpace,
+    name: 'Space Travelers- Hub',
+    lang: ['API', 'Webpack', 'JavaScript'],
+    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    liveLink: 'https://app-space-travelers-hub.netlify.app/',
+    sourceLink: 'https://github.com/mavericks-db/space-travelers-hub',
+    description: 'Microverse React Group Project: This educational project is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Built with React, Redux Toolkit, API, Sass and JavaScript.',
+  },
+  {
+    h3: 'Pokemon Web App',
+    img: mockPokemon,
+    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    imgM: mockPokemon,
+    imgD: mockPokemon,
+    name: 'Pokemon Web App',
+    lang: ['API', 'Webpack', 'JavaScript'],
+    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    liveLink: 'https://app-pokemon-webapp.netlify.app/',
+    sourceLink: 'https://github.com/mavericks-db/capstone03',
+    description: 'Microverse React Capstone Project: This educational project is to build a mobile web application to check a list of metrics (numeric values) using React and Redux. Built with React, Redux Toolkit, API, Sass and JavaScript.',
   },
 ];
 
@@ -111,14 +133,10 @@ const li4 = [];
 const button1 = [];
 const button2 = [];
 
-for (let i = 0; i < 6; i += 1) {
+for (let i = 0; i < cardObj.length; i += 1) {
   gridItem[i] = document.createElement('div');
   gridItem[i].classList.add('gridItem');
   gridItem[i].style.backgroundImage = `url(${cardObj[i].img})`;
-  gridItem[i].style.backgroundSize = 'contain';
-  gridItem[i].style.backgroundRepeat = 'no-repeat';
-  gridItem[i].style.backgroundPosition = 'top';
-
 
   descriptionContainer[i] = document.createElement('div');
   descriptionContainer[i].classList.add('descriptionContainer');
