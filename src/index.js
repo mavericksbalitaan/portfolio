@@ -117,6 +117,8 @@ for (let i = 0; i < 6; i += 1) {
   gridItem[i].style.backgroundImage = `url(${cardObj[i].img})`;
   gridItem[i].style.backgroundSize = 'contain';
   gridItem[i].style.backgroundRepeat = 'no-repeat';
+  gridItem[i].style.backgroundPosition = 'top';
+
 
   descriptionContainer[i] = document.createElement('div');
   descriptionContainer[i].classList.add('descriptionContainer');
