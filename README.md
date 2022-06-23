@@ -1,13 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76bfe37d-afa1-416f-b589-405ca6416dbb/deploy-status)](https://app.netlify.com/sites/app-mavericks-db/deploys)
+
 # Mavericks Balitaan Portfolio
 ## *Microverse Module 1 Project*
 
-> This is my working portfolio. Inside you will find my background information, contacts, and project showcase.
+> This is my working portfolio. Inside you will find my background information, contact information, and my recent projects.
 
 ## Built With 🛠️
 
-- [x] Language: HTML, Sass and JavaScript
+- [x] Language: Webpack, Sass and JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESLint
 - [x] Code Editor: VS Code
 - [x] Figma [Template 3](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468)
@@ -20,7 +22,9 @@ Mobile and desktop version screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check out the live demo [here](https://mavericks-db.github.io/portfolio/dist)👈
+Check the live demo [heroku](https://app-mavericks-db.herokuapp.com/)👈
+
+Check the live demo [netlify](https://app-mavericks-db.netlify.app/)👈
 
 ## Getting Started
 To get a local copy up and running follow these simple steps.
@@ -67,11 +71,18 @@ Please find the link in the Live Demo section.
 
 👤 **Mavericks Balitaan** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
-- GitHub: [![GitHub Badge](https://img.shields.io/badge/-mavericks--db-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/mavericks-db)
-- Twitter: [![Twitter Badge](https://img.shields.io/badge/-mavericks__db-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/mavericks_db)
-- Facebook: [![Facebook Badge](https://img.shields.io/badge/-mavericksdb-white?logo=Facebook&logoColor=1877F2&style=plastic)](https://www.facebook.com/mavericksdb/)
+
 - LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-mavericks--db-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/mavericks-db/)
-- Gmail: [![Gmail Badge](https://img.shields.io/badge/-@balitaanmavericks-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:balitaanmavericks@gmail.com)
+
+- AngelList: [![AngelList Badge](https://img.shields.io/badge/-mavericks--db-white?logo=AngelList&logoColor=000000&style=plastic)](https://angel.co/u/mavericks-db)
+
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-mavericks--db-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/mavericks-db)
+
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-mavericks__db-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/mavericks_db)
+
+- Facebook: [![Facebook Badge](https://img.shields.io/badge/-mavericksdb-white?logo=Facebook&logoColor=1877F2&style=plastic)](https://www.facebook.com/mavericksdb/)
+
+- Gmail: [![Gmail Badge](https://img.shields.io/badge/-balitaanmavericks-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:balitaanmavericks@gmail.com)
 
 👤 **Baroka Irotori** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
