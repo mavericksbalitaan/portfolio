@@ -96,12 +96,12 @@ const cardObj = [
   {
     h3: 'Space Travelers- Hub',
     img: mockSpace,
-    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    li: ['React', 'RTK', 'JavaScript', 'Sass'],
     imgM: mockSpace,
     imgD: mockSpace,
     name: 'Space Travelers- Hub',
-    lang: ['API', 'Webpack', 'JavaScript'],
-    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    lang: ['React', 'RTK', 'JavaScript'],
+    langDesktop: ['React', 'RTK', 'JavaScript', 'Sass', 'API', 'Linters'],
     liveLink: 'https://app-space-travelers-hub.netlify.app/',
     sourceLink: 'https://github.com/mavericks-db/space-travelers-hub',
     description: 'Microverse React Group Project: This educational project is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Built with React, Redux Toolkit, API, Sass and JavaScript.',
@@ -109,12 +109,12 @@ const cardObj = [
   {
     h3: 'Pokemon Web App',
     img: mockPokemon,
-    li: ['API', 'Webpack', 'Sass', 'JavaScript'],
+    li: ['React', 'RTK', 'JavaScript', 'Sass'],
     imgM: mockPokemon,
     imgD: mockPokemon,
     name: 'Pokemon Web App',
-    lang: ['API', 'Webpack', 'JavaScript'],
-    langDesktop: ['API', 'Webpack', 'HTML', 'Sass', 'JavaScript', 'Linters'],
+    lang: ['React', 'RTK', 'JavaScript'],
+    langDesktop: ['React', 'RTK', 'JavaScript', 'Sass', 'API', 'Linters'],
     liveLink: 'https://app-pokemon-webapp.netlify.app/',
     sourceLink: 'https://github.com/mavericks-db/capstone03',
     description: 'Microverse React Capstone Project: This educational project is to build a mobile web application to check a list of metrics (numeric values) using React and Redux. Built with React, Redux Toolkit, API, Sass and JavaScript.',
@@ -331,6 +331,7 @@ function openDesktopModal(e) {
   const li3 = document.createElement('li');
   const li4 = document.createElement('li');
   const li5 = document.createElement('li');
+
   const li0text = document.createTextNode(cardObj[i].langDesktop[0]);
   const li1text = document.createTextNode(cardObj[i].langDesktop[1]);
   const li2text = document.createTextNode(cardObj[i].langDesktop[2]);

@@ -28,7 +28,7 @@ html {
   --color-white: #fff;
   --color-neutral-border: #d0d9d4;
   --color-grey-text: #3a4a42;
-  --color-modal-background: #c1c7d0;
+  --color-modal-background: #f1f4f6;
   --borderCheck: 1px solid crimson;
 }
 
@@ -484,7 +484,7 @@ body {
 
   .closeDesktop {
     align-self: flex-end;
-    background-color: var(--color-modal-background);
+    background-color: var(--color-darkgreen);
     padding-bottom: 0;
     width: 3rem;
   }

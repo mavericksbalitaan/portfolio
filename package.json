@@ -9,7 +9,8 @@
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "build": "webpack --mode production",
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "linter": "eslint . --fix; stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
