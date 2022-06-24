@@ -2,15 +2,15 @@ import './style.scss';
 import close from './assets/close-mobileModal.svg';
 import live from './assets/icon-live.png';
 import source from './assets/icon-source.png';
-import mockAwc from './assets/img/awc2022/mock_awc.png';
-import mockTdl from './assets/img/to-do-list/mock_tdl.png';
-import mockLdb from './assets/img/leaderboard/mock_ldb.png';
-import mockApi from './assets/img/primeshows/mock_api.png';
-import mockMath from './assets/img/math-magicians/mock_math.png';
-import mockBook from './assets/img/bookstore/mock_bookstore.png';
-import mockSpace from './assets/img/space-travelers-hub/mock_space.png';
-import mockPokemon from './assets/img/pokemon/mock_pokemon.png';
-import mockBooks from './assets/img/awesome-books/mock_books.png';
+import imgPokemon from './assets/img/pokemon/mock_pokemon.png';
+import imgPS from './assets/img/primeshows/mock_ps.png';
+import imgAWC from './assets/img/awc2022/mock_awc.png';
+import imgSpace from './assets/img/space-travelers-hub/mock_space.png';
+import imgBooks from './assets/img/bookstore/mock_bookstore.png';
+import imgMath from './assets/img/math-magicians/mock_math.png';
+import imgTodo from './assets/img/to-do-list/mock_tdl.png';
+import imgLdb from './assets/img/leaderboard/mock_ldb.png';
+import mockAwe from './assets/img/awesome-books/mock_books.png';
 
 const gridContainer = document.querySelector('.gridContainer');
 
@@ -18,120 +18,107 @@ const gridContainer = document.querySelector('.gridContainer');
 const cardObj = [
   {
     h3: 'Pokemon Web App',
-    img: mockPokemon,
-    li: ['React', 'Redux', 'JavaScript', 'Sass'],
-    imgM: mockPokemon,
-    imgD: mockPokemon,
+    img: imgPokemon,
     name: 'Pokemon Web App',
-    lang: ['React', 'Redux', 'JavaScript'],
-    langDesktop: ['React', 'Redux', 'JavaScript', 'Sass', 'API', 'Linters'],
-    liveLink: 'https://app-pokemon-webapp.netlify.app/',
-    sourceLink: 'https://github.com/mavericks-db/capstone03',
-    description: 'Microverse React Capstone Project: This educational project is to build a mobile web application to check a list of metrics (numeric values) using React and Redux.',
+    lang: ['React', 'Redux', 'JavaScript', 'Sass', 'API', 'Linters'],
+    demo: 'https://app-pokemon-webapp.netlify.app/',
+    source: 'https://github.com/mavericks-db/capstone03',
+    description:
+      'Microverse React Capstone Project: This educational project is to build a mobile web application to check a list of metrics (numeric values) using React and Redux.',
   },
   {
     h3: 'Prime Shows HD',
-    img: mockApi,
-    li: ['Webpack', 'JavaScript', 'Jest', 'Sass'],
-    imgM: mockApi,
-    imgD: mockApi,
+    img: imgPS,
     name: 'Prime Shows HD',
-    lang: ['Webpack', 'JavaScript', 'Jest', 'Sass'],
-    langDesktop: ['Webpack', 'JavaScript', 'Jest', 'Sass', 'API', 'Linters'],
-    liveLink: 'https://mavericks-db.github.io/capstone02/dist/',
-    sourceLink: 'https://github.com/mavericks-db/capstone02',
-    description: 'Microverse Second Capstone Project: This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 or 3 user interfaces (depending on the size of our team).',
+    lang: ['Webpack', 'JavaScript', 'Jest', 'Sass', 'API', 'Linters'],
+    demo: 'https://mavericks-db.github.io/capstone02/dist/',
+    source: 'https://github.com/mavericks-db/capstone02',
+    description:
+      'Microverse Second Capstone Project: This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 or 3 user interfaces (depending on the size of our team).',
   },
   {
     h3: 'AWC 2022',
-    img: mockAwc,
-    li: ['JavaScript', 'Linters', 'Sass', 'HTML'],
-    imgM: mockAwc,
-    imgD: mockAwc,
+    img: imgAWC,
     name: 'Asia Web Conference 2022',
-    lang: ['JavaScript', 'Linters', 'Sass', 'HTML'],
-    langDesktop: ['JavaScript', 'Linters', 'Sass', 'HTML', 'VS Code', 'GitHub Pages'],
-    liveLink: 'https://mavericks-db.github.io/capstone01/',
-    sourceLink: 'https://github.com/mavericks-db/capstone01',
-    description: 'Microverse First Capstone Project: This is an educational project to make a website for a web conference event with home page and about page.',
+    lang: [
+      'JavaScript',
+      'Linters',
+      'Sass',
+      'HTML',
+      'VS Code',
+      'GitHub Pages',
+    ],
+    demo: 'https://mavericks-db.github.io/capstone01/',
+    source: 'https://github.com/mavericks-db/capstone01',
+    description:
+      'Microverse First Capstone Project: This is an educational project to make a website for a web conference event with home page and about page.',
   },
   {
     h3: 'Space Travelers- Hub',
-    img: mockSpace,
-    li: ['React', 'Redux', 'Router', 'JavaScript'],
-    imgM: mockSpace,
-    imgD: mockSpace,
+    img: imgSpace,
     name: 'Space Travelers- Hub',
-    lang: ['React', 'Redux', 'Router', 'JavaScript'],
-    langDesktop: ['React', 'Redux', 'Router', 'JavaScript', 'Jest', 'Sass'],
-    liveLink: 'https://app-space-travelers-hub.netlify.app/',
-    sourceLink: 'https://github.com/mavericks-db/space-travelers-hub',
-    description: 'Microverse React Group Project: This educational project is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    lang: ['React', 'Redux', 'Router', 'JavaScript', 'Jest', 'Sass'],
+    demo: 'https://app-space-travelers-hub.netlify.app/',
+    source: 'https://github.com/mavericks-db/space-travelers-hub',
+    description:
+      'Microverse React Group Project: This educational project is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
   },
   {
     h3: 'Bookstore CMS',
-    img: mockBook,
-    li: ['React', 'Redux', 'Router', 'JavaScript'],
-    imgM: mockBook,
-    imgD: mockBook,
+    img: imgBooks,
     name: 'Bookstore CMS',
-    lang: ['React', 'Redux', 'Router', 'JavaScript'],
-    langDesktop: ['React', 'Redux', 'Router', 'JavaScript', 'Jest', 'Sass'],
-    liveLink: 'https://app-bookstore-cms.netlify.app/',
-    sourceLink: 'https://github.com/mavericks-db/bookstore',
-    description: 'Microverse Module 03 Project: This educational project is similar to the "Awesome Books" website. It is a MVP version of it that allows you to display a list of books, add a book and remove a selected book.',
+    lang: ['React', 'Redux', 'Router', 'JavaScript', 'Jest', 'Sass'],
+    demo: 'https://app-bookstore-cms.netlify.app/',
+    source: 'https://github.com/mavericks-db/bookstore',
+    description:
+      'Microverse Module 03 Project: This educational project is similar to the "Awesome Books" website. It is a MVP version of it that allows you to display a list of books, add a book and remove a selected book.',
   },
   {
     h3: 'Math Magicians',
-    img: mockMath,
-    li: ['React', 'Router', 'JavaScript', 'Sass'],
-    imgM: mockMath,
-    imgD: mockMath,
+    img: imgMath,
     name: 'Math Magicians',
-    lang: ['React', 'Router', 'JavaScript', 'Sass'],
-    langDesktop: ['React', 'Router', 'JavaScript', 'Jest', 'Sass', 'Linters'],
-    liveLink: 'https://app-math-magicians.netlify.app/',
-    sourceLink: 'https://github.com/mavericks-db/math-magicians',
-    description: 'Microverse Module 03 Project: "Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make a simple calculations and read a random math-related quote.',
+    lang: ['React', 'Router', 'JavaScript', 'Jest', 'Sass', 'Linters'],
+    demo: 'https://app-math-magicians.netlify.app/',
+    source: 'https://github.com/mavericks-db/math-magicians',
+    description:
+      'Microverse Module 03 Project: "Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make a simple calculations and read a random math-related quote.',
   },
   {
     h3: 'To-Do List',
-    img: mockTdl,
-    li: ['Webpack', 'JavaScript', 'Linters', 'Sass'],
-    imgM: mockTdl,
-    imgD: mockTdl,
+    img: imgTodo,
     name: 'To-Do List App',
-    lang: ['Webpack', 'JavaScript', 'Linters', 'Sass'],
-    langDesktop: ['Webpack', 'JavaScript', 'Linters', 'Sass', 'HTML', 'Jest'],
-    liveLink: 'https://mavericks-db.github.io/todo-list/dist/index.html',
-    sourceLink: 'https://github.com/mavericks-db/todo-list',
-    description: 'This is an educational project to make a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+    lang: ['Webpack', 'JavaScript', 'Linters', 'Sass', 'HTML', 'Jest'],
+    demo: 'https://mavericks-db.github.io/todo-list/dist/index.html',
+    source: 'https://github.com/mavericks-db/todo-list',
+    description:
+      'This is an educational project to make a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
   },
   {
     h3: 'Leaderboard',
-    img: mockLdb,
-    li: ['Webpack', 'JavaScript', 'Linters', 'API'],
-    imgM: mockLdb,
-    imgD: mockLdb,
+    img: imgLdb,
     name: 'Leaderboard App',
-    lang: ['Webpack', 'JavaScript', 'Linters', 'API'],
-    langDesktop: ['Webpack', 'JavaScript', 'Linters', 'API', 'Sass', 'Jest'],
-    liveLink: 'https://mavericks-db.github.io/leaderboard/dist/index.html',
-    sourceLink: 'https://github.com/mavericks-db/leaderboard',
-    description: 'This is an educational project to create a website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API Service.',
+    lang: ['Webpack', 'JavaScript', 'Linters', 'API', 'Sass', 'Jest'],
+    demo: 'https://mavericks-db.github.io/leaderboard/dist/index.html',
+    source: 'https://github.com/mavericks-db/leaderboard',
+    description:
+      'This is an educational project to create a website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API Service.',
   },
   {
     h3: 'Awesome Books',
-    img: mockBooks,
-    li: ['JavaScript', 'Linters', 'HTML', 'Sass'],
-    imgM: mockBooks,
-    imgD: mockBooks,
+    img: mockAwe,
     name: 'Awesome Books',
-    lang: ['JavaScript', 'Linters', 'HTML', 'Sass'],
-    langDesktop: ['JavaScript', 'Linters', 'HTML', 'Sass', 'Jest', 'GitHub Pages'],
-    liveLink: 'https://mavericks-db.github.io/awesome-books-ES6/',
-    sourceLink: 'https://github.com/mavericks-db/awesome-books-ES6',
-    description: 'This is an educational project to make a simple website that displays a list of books and allows you to add and remove books from that list. The goal is to make it more organized by using modules and practice the ES6 syntax.',
+    lang: [
+      'JavaScript',
+      'Linters',
+      'HTML',
+      'Sass',
+      'Jest',
+      'GitHub Pages',
+    ],
+    demo: 'https://mavericks-db.github.io/awesome-books-ES6/',
+    source: 'https://github.com/mavericks-db/awesome-books-ES6',
+    description:
+      'This is an educational project to make a simple website that displays a list of books and allows you to add and remove books from that list. The goal is to make it more organized by using modules and practice the ES6 syntax.',
   },
 ];
 
@@ -140,10 +127,6 @@ const gridItem = [];
 const descriptionContainer = [];
 const h3 = [];
 const ul = [];
-const li1 = [];
-const li2 = [];
-const li3 = [];
-const li4 = [];
 const button1 = [];
 const button2 = [];
 
@@ -160,21 +143,14 @@ for (let i = 0; i < cardObj.length; i += 1) {
   h3[i].append(h3text);
 
   ul[i] = document.createElement('ul');
-  li1[i] = document.createElement('li');
-  const li1text = document.createTextNode(cardObj[i].li[0]);
-  li1[i].append(li1text);
-
-  li2[i] = document.createElement('li');
-  const li2text = document.createTextNode(cardObj[i].li[1]);
-  li2[i].append(li2text);
-
-  li3[i] = document.createElement('li');
-  const li3text = document.createTextNode(cardObj[i].li[2]);
-  li3[i].append(li3text);
-
-  li4[i] = document.createElement('li');
-  const li4text = document.createTextNode(cardObj[i].li[3]);
-  li4[i].append(li4text);
+  const obj = {};
+  const listItems = ['li0', 'li1', 'li2', 'li3'];
+  listItems.forEach((el, j) => {
+    obj[el] = document.createElement('li');
+    const txt = document.createTextNode(cardObj[i].lang[j]);
+    obj[el].appendChild(txt);
+    ul[i].append(obj[el]);
+  });
 
   button1[i] = document.createElement('button');
   const button1text = document.createTextNode('See Project');
@@ -192,7 +168,6 @@ for (let i = 0; i < cardObj.length; i += 1) {
   button2[i].setAttribute('aria-label', 'See Project Button');
   button2[i].setAttribute('data-index', i);
 
-  ul[i].append(li1[i], li2[i], li3[i], li4[i]);
   descriptionContainer[i].append(h3[i], ul[i], button1[i], button2[i]);
   gridItem[i].append(descriptionContainer[i]);
   gridContainer.append(gridItem[i]);
@@ -249,22 +224,20 @@ function openMobileModal(e) {
 
   const img2 = document.createElement('img');
   img2.classList.add('projectImgMobile');
-  img2.setAttribute('src', cardObj[i].imgM);
+  img2.setAttribute('src', cardObj[i].img);
   const h2 = document.createElement('h2');
   h2.classList.add('projectName');
   h2.innerHTML = cardObj[i].name;
 
   const ul = document.createElement('ul');
-  const li0 = document.createElement('li');
-  const li1 = document.createElement('li');
-  const li2 = document.createElement('li');
-  const li0text = document.createTextNode(cardObj[i].lang[0]);
-  const li1text = document.createTextNode(cardObj[i].lang[1]);
-  const li2text = document.createTextNode(cardObj[i].lang[2]);
-  li0.appendChild(li0text);
-  li1.appendChild(li1text);
-  li2.appendChild(li2text);
-  ul.append(li0, li1, li2);
+  const obj = {};
+  const listItems = ['li0', 'li1', 'li2'];
+  listItems.forEach((el, j) => {
+    obj[el] = document.createElement('li');
+    const txt = document.createTextNode(cardObj[i].lang[j]);
+    obj[el].appendChild(txt);
+    ul.append(obj[el]);
+  });
 
   const p = document.createElement('p');
   p.classList.add('projectDescription');
@@ -276,7 +249,7 @@ function openMobileModal(e) {
   a1.classList.add('liveBtn');
   const linka1 = document.createTextNode('See Live');
   a1.appendChild(linka1);
-  a1.href = cardObj[i].liveLink;
+  a1.href = cardObj[i].live;
   const imga1 = document.createElement('img');
   imga1.setAttribute('src', live);
   a1.appendChild(imga1);
@@ -285,18 +258,13 @@ function openMobileModal(e) {
   a2.classList.add('srcBtn');
   const linka2 = document.createTextNode('See Source');
   a2.appendChild(linka2);
-  a2.href = cardObj[i].sourceLink;
+  a2.href = cardObj[i].source;
   const imga2 = document.createElement('img');
   imga2.setAttribute('src', source);
   a2.appendChild(imga2);
 
-  div1.appendChild(img1);
-  div1.appendChild(img2);
-  div1.appendChild(h2);
-  div1.appendChild(ul);
-  div1.appendChild(p);
-  div2.appendChild(a1);
-  div2.appendChild(a2);
+  div1.append(img1, img2, h2, ul, p);
+  div2.append(a1, a2);
   div1.appendChild(div2);
   mobileModal[i].appendChild(div1);
 }
@@ -329,7 +297,7 @@ function openDesktopModal(e) {
 
   const img2 = document.createElement('img');
   img2.classList.add('projectImgDesktop');
-  img2.setAttribute('src', cardObj[i].imgD);
+  img2.setAttribute('src', cardObj[i].img);
 
   const div3 = document.createElement('div');
   div3.classList.add('desktopModalHeadline');
@@ -339,26 +307,15 @@ function openDesktopModal(e) {
   h2.innerHTML = cardObj[i].name;
 
   const ul = document.createElement('ul');
-  const li0 = document.createElement('li');
-  const li1 = document.createElement('li');
-  const li2 = document.createElement('li');
-  const li3 = document.createElement('li');
-  const li4 = document.createElement('li');
-  const li5 = document.createElement('li');
 
-  const li0text = document.createTextNode(cardObj[i].langDesktop[0]);
-  const li1text = document.createTextNode(cardObj[i].langDesktop[1]);
-  const li2text = document.createTextNode(cardObj[i].langDesktop[2]);
-  const li3text = document.createTextNode(cardObj[i].langDesktop[3]);
-  const li4text = document.createTextNode(cardObj[i].langDesktop[4]);
-  const li5text = document.createTextNode(cardObj[i].langDesktop[5]);
-  li0.appendChild(li0text);
-  li1.appendChild(li1text);
-  li2.appendChild(li2text);
-  li3.appendChild(li3text);
-  li4.appendChild(li4text);
-  li5.appendChild(li5text);
-  ul.append(li0, li1, li2, li3, li4, li5);
+  const obj = {};
+  const listItems = ['li0', 'li1', 'li2', 'li3', 'li4', 'li5'];
+  listItems.forEach((el, j) => {
+    obj[el] = document.createElement('li');
+    const txt = document.createTextNode(cardObj[i].lang[j]);
+    obj[el].appendChild(txt);
+    ul.append(obj[el]);
+  });
 
   const p = document.createElement('p');
   p.classList.add('projectDescriptionDesktop');
@@ -372,7 +329,7 @@ function openDesktopModal(e) {
 
   const linka1 = document.createTextNode('See Live');
   a1.appendChild(linka1);
-  a1.href = cardObj[i].liveLink;
+  a1.href = cardObj[i].demo;
 
   const imga1 = document.createElement('img');
   imga1.setAttribute('src', live);
@@ -383,19 +340,15 @@ function openDesktopModal(e) {
 
   const linka2 = document.createTextNode('See Source');
   a2.appendChild(linka2);
-  a2.href = cardObj[i].sourceLink;
+  a2.href = cardObj[i].source;
 
   const imga2 = document.createElement('img');
   imga2.setAttribute('src', source);
   a2.appendChild(imga2);
-  div1.appendChild(img1);
-  div1.appendChild(img2);
+  div1.append(img1, img2);
   div3.appendChild(h2);
-  div1.appendChild(div3);
-  div1.appendChild(ul);
-  div1.appendChild(p);
-  div2.appendChild(a1);
-  div2.appendChild(a2);
+  div1.append(div3, ul, p);
+  div2.append(a1, a2);
   div3.appendChild(div2);
   desktopModal.appendChild(div1);
 }
@@ -431,7 +384,9 @@ function validation() {
   const str = emailInputMobile.value.trim();
   const regEx = /[A-Z]/g;
   if (regEx.test(str)) {
-    submitBtnMobile.setCustomValidity('Sorry, this form has not been submitted. The content of the email field has to be in lower case. \n Please check your inputs and reload the page');
+    submitBtnMobile.setCustomValidity(
+      'Sorry, this form has not been submitted. The content of the email field has to be in lower case. \n Please check your inputs and reload the page',
+    );
     submitBtnMobile.reportValidity();
     isFormValid = false;
     storeInlS();
@@ -445,7 +400,9 @@ formMobile.addEventListener('submit', (e) => {
   e.preventDefault();
   validation();
   if (isFormValid) {
-    submitBtnMobile.setCustomValidity('The form has been submitted. \n Thank you for contacting me.');
+    submitBtnMobile.setCustomValidity(
+      'The form has been submitted. \n Thank you for contacting me.',
+    );
     submitBtnMobile.reportValidity();
     formMobile.submit();
   }
@@ -463,7 +420,9 @@ function validationDesktop() {
   const str = emailInputDesktop.value.trim();
   const regEx = /[A-Z]/g;
   if (regEx.test(str)) {
-    submitBtnDesktop.setCustomValidity('Sorry, this form has not been submitted. The content of the email field has to be in lower case. \n Please check your inputs and reload the page.');
+    submitBtnDesktop.setCustomValidity(
+      'Sorry, this form has not been submitted. The content of the email field has to be in lower case. \n Please check your inputs and reload the page.',
+    );
     submitBtnDesktop.reportValidity();
     isFormValid = false;
     storeInlS();
@@ -477,7 +436,9 @@ formDesktop.addEventListener('submit', (e) => {
   e.preventDefault();
   validationDesktop();
   if (isFormValid) {
-    submitBtnDesktop.setCustomValidity('The form has been submitted. \n Thank you for contacting me.');
+    submitBtnDesktop.setCustomValidity(
+      'The form has been submitted. \n Thank you for contacting me.',
+    );
     submitBtnDesktop.reportValidity();
     formDesktop.submit();
   }
