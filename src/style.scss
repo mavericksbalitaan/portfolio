@@ -325,7 +325,7 @@ body {
       background-color: var(--color-neutral);
       border-radius: 4px;
       padding: 0.5rem 0.75rem;
-      margin: 0 0.5rem;
+      margin: 0 0.25rem;
       text-align: center;
       color: var(--color-grey-text);
       white-space: nowrap;
@@ -487,6 +487,10 @@ body {
     background-color: var(--color-darkgreen);
     padding-bottom: 0;
     width: 3rem;
+
+    &:hover {
+      background-color: var(--color-darkblue);
+    }
   }
 
   .projectImgDesktop {
@@ -682,16 +686,6 @@ body {
     line-height: 32px;
     color: #344563;
     padding: 0.75rem;
-  }
-
-  .lang {
-    position: relative;
-    bottom: 1.5rem;
-  }
-
-  .langUl {
-    position: relative;
-    bottom: 1rem;
   }
 
   ul {
@@ -1396,10 +1390,9 @@ footer {
   }
 
   .cardsContainer {
-    display: grid;
-    place-items: center;
-    align-items: stretch;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 1.5rem;
     margin: 0 8rem;
   }
