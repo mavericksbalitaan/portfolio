@@ -15,7 +15,7 @@
 - [x] Figma [Template 3](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468)
 
 ## Website Mockup 📱 💻 🖥️
-![all-devices-black](https://user-images.githubusercontent.com/98527559/163574091-fa7869bc-8077-4cca-8394-46c0a08a6346.png)
+![app_screenshot](https://user-images.githubusercontent.com/98527559/175526090-83965dbe-743b-4f29-a9cb-4c88e527c231.png)
 
 ## Screenshots 📸
 Mobile and desktop version screenshots can be found in the repository.
