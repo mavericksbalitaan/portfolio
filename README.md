@@ -1,7 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/76bfe37d-afa1-416f-b589-405ca6416dbb/deploy-status)](https://app.netlify.com/sites/app-mavericks-db/deploys)
-
 # Mavericks Balitaan Portfolio
 ## *Microverse Module 1 Project*
 
@@ -22,9 +20,7 @@ Mobile and desktop version screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [heroku](https://app-mavericks-db.herokuapp.com/)👈
-
-Check the live demo [netlify](https://app-mavericks-db.netlify.app/)👈
+Check the live demo [here](https://mavericks-db.github.io/portfolio/dist/)👈
 
 ## Getting Started
 To get a local copy up and running follow these simple steps.
